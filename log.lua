@@ -4,7 +4,6 @@ local Logger = {}
 --Logger.__index = Logger
 
 function Logger.__init__(baseClass, level, name, write_term_log, write_log_file)
-    print(level, name, write_term_log, write_log_file)
     self = {}
     --setmetatable(self, Logger)
     self.log_level = level or 1
